@@ -53,4 +53,4 @@ with gr.Blocks() as demo:
         convert_button.click(convert_to_arkts, inputs=[json_input, dropdown], outputs=output_code)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7860)

@@ -3,7 +3,14 @@
 ## 描述
 一个Gradio构建的简单应用，用户输入JSON，转为鸿蒙ArkTS的接口（Interface）或类（Class）。
 
-## 使用
+## [docker运行>>](docker/README.md)
+
+`--build`参数用于构建镜像。如果首次运行后内容没有修改，可以不使用该参数。
+```shell
+docker compose -f docker/docker-compose.yml -p json2arkts up -d --build
+```
+
+## 源码运行
 
 - 克隆项目
 ```bash

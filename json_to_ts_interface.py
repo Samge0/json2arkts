@@ -8,6 +8,7 @@ class JsonToTSInterface:
         pass
 
     def convert(self, json_str):
+        self.sub_class_list = []
         data = json.loads(json_str)
         ts_classes = self._parse_dict(data, "Root")
         return ts_classes
